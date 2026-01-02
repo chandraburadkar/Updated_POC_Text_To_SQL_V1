@@ -1,0 +1,38 @@
+auth:
+  enabled: true
+  header_name: "x-mcp-api-key"
+
+audit:
+  enabled: true
+  path: "./mcp_audit.log"
+
+limits:
+  max_rows: 500
+  default_limit: 50
+
+sql_safety:
+  # block DDL/DML keywords
+  forbidden_keywords:
+    - insert
+    - update
+    - delete
+    - merge
+    - drop
+    - alter
+    - create
+    - truncate
+    - replace
+    - grant
+    - revoke
+    - pragma
+    - load
+    - install
+    - export
+    - import
+    - vacuum
+    - analyze
+
+# optional global allowlist (applies even to admin if enabled)
+table_allowlist:
+  enabled: false
+  tables: []

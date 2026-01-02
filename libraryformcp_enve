@@ -1,0 +1,32 @@
+# ---- Core MCP ----
+fastmcp==2.14.2
+mcp==1.25.0
+
+# ---- Web / ASGI ----
+uvicorn>=0.29.0
+starlette>=0.50.0
+sse-starlette>=3.1.2
+
+# ---- HTTP / Utils ----
+httpx>=0.28.1
+requests>=2.31.0
+
+# ---- Database ----
+duckdb>=1.1.0
+pandas>=2.2.0
+
+# ---- Config / YAML ----
+python-dotenv>=1.1.0
+pyyaml>=6.0.1
+
+# ---- Auth / Security (FastMCP deps) ----
+authlib>=1.6.5
+pyjwt>=2.10.1
+cryptography>=42.0.0
+
+# ---- Observability (optional but installed via fastmcp) ----
+opentelemetry-api>=1.30.0
+opentelemetry-sdk>=1.30.0
+
+# ---- Compatibility ----
+typing-extensions>=4.9.0
